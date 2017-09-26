@@ -88,3 +88,6 @@ class config(object):
         self.deleteSource = parser.getboolean("scp", "deleteSource")        
         # Set health check related attributes
         self.healthFileName = parser.get("health", "healthFileName")
+        self.healthMqttHost = parser.get("health", "healthMqttHost")
+        self.healthMqttPort = parser.getint("health", "healthMqttPort")
+        self.healthMqttTopic = parser.get("health", "healthMqttTopic")
