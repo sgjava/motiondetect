@@ -163,6 +163,8 @@ If you want to monitor the health of Motion Detector you just need to look at he
 UserParameter=camhealth,if test `find "/home/servadmin/motion/health.txt" -mmin -2`; then echo "1"; else echo "0"; fi
 ```
 
+You can also use a MQTT broker, such as `mosquitto`, as Motion Detector can periodically publish a message regarding its health.
+
 ### FreeBSD License
 Copyright (c) Steven P. Goldsmith
 
